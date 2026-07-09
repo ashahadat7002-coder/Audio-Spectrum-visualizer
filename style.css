@@ -1,0 +1,326 @@
+*{
+
+    box-sizing:border-box;
+
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+}
+
+
+
+body{
+
+
+    margin:0;
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+        135deg,
+        #020617,
+        #111827
+    );
+
+
+    color:white;
+
+}
+
+
+
+
+.container{
+
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:30px;
+
+    text-align:center;
+
+
+}
+
+
+
+h1{
+
+    margin-bottom:25px;
+
+    font-size:38px;
+
+}
+
+
+
+
+.song-info{
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+.song-info h2{
+
+    color:#38bdf8;
+
+}
+
+
+
+
+#visualizer{
+
+
+    width:100%;
+
+    height:420px;
+
+    display:block;
+
+
+    background:
+
+    linear-gradient(
+        to bottom,
+        #020617,
+        #0f172a
+    );
+
+
+    border:
+
+    1px solid #334155;
+
+
+    border-radius:15px;
+
+
+    box-shadow:
+
+    0 0 30px
+    rgba(56,189,248,0.2);
+
+
+}
+
+
+
+
+
+.mode-section,
+.upload-section,
+.controls,
+.progress-section,
+.volume-section,
+.stats{
+
+
+    margin:20px 0;
+
+
+}
+
+
+
+
+
+select{
+
+
+    padding:10px;
+
+    margin-left:10px;
+
+    background:#111827;
+
+    color:white;
+
+    border:
+
+    1px solid #38bdf8;
+
+    border-radius:8px;
+
+
+}
+
+
+
+
+.upload-btn{
+
+
+    display:inline-block;
+
+    background:#38bdf8;
+
+    color:#020617;
+
+    padding:12px 25px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+
+}
+
+
+
+.upload-btn input{
+
+
+    display:none;
+
+
+}
+
+
+
+
+button{
+
+
+    padding:
+
+    12px 20px;
+
+
+    margin:5px;
+
+
+    border:none;
+
+
+    border-radius:10px;
+
+
+    cursor:pointer;
+
+
+    background:#1e293b;
+
+
+    color:white;
+
+
+    font-size:16px;
+
+
+}
+
+
+
+button:hover{
+
+
+    background:#38bdf8;
+
+    color:#020617;
+
+
+}
+
+
+
+
+input[type="range"]{
+
+
+    width:60%;
+
+
+}
+
+
+
+
+
+.progress-section{
+
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:15px;
+
+
+}
+
+
+
+
+.volume-section{
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:15px;
+
+
+}
+
+
+
+
+.stats{
+
+
+    color:#38bdf8;
+
+    font-size:18px;
+
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+    .container{
+
+        width:95%;
+
+        padding:15px;
+
+    }
+
+
+    #visualizer{
+
+        height:300px;
+
+    }
+
+
+    .progress-section{
+
+        flex-direction:column;
+
+    }
+
+
+}

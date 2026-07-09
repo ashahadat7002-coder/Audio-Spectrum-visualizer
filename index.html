@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Audio Spectrum Visualizer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<main class="container">
+
+
+    <h1>
+        🎵 Audio Spectrum Visualizer
+    </h1>
+
+
+    <!-- Song Information -->
+
+    <section class="song-info">
+
+        <h2 id="songTitle">
+            No Audio Selected
+        </h2>
+
+        <p id="songStatus">
+            Upload an audio file to begin.
+        </p>
+
+    </section>
+
+
+
+    <!-- Canvas Visualizer -->
+
+    <canvas id="visualizer"></canvas>
+
+
+
+    <!-- Visualization Mode -->
+
+    <section class="mode-section">
+
+        <label for="visualizerMode">
+            Visualization Mode:
+        </label>
+
+
+        <select id="visualizerMode">
+
+            <option value="blue">
+                Blue Spectrum
+            </option>
+
+            <option value="rgb">
+                RGB Spectrum
+            </option>
+
+            <option value="threeBand">
+                3 Band Spectrum
+            </option>
+
+        </select>
+
+    </section>
+
+
+
+    <!-- Upload Audio -->
+
+    <section class="upload-section">
+
+        <label class="upload-btn">
+
+            🎵 Upload Audio
+
+            <input 
+                type="file"
+                id="audioFile"
+                accept="audio/*"
+            >
+
+        </label>
+
+    </section>
+
+
+
+    <!-- Player Controls -->
+
+    <section class="controls">
+
+        <button id="playBtn" disabled>
+            ▶ Play
+        </button>
+
+
+        <button id="pauseBtn" disabled>
+            ⏸ Pause
+        </button>
+
+
+        <button id="stopBtn" disabled>
+            ⏹ Stop
+        </button>
+
+
+    </section>
+
+
+
+    <!-- Progress -->
+
+    <section class="progress-section">
+
+
+        <span id="currentTime">
+            00:00
+        </span>
+
+
+        <input
+
+            type="range"
+
+            id="progressBar"
+
+            value="0"
+
+            min="0"
+
+            max="100"
+
+        >
+
+
+        <span id="duration">
+            00:00
+        </span>
+
+
+    </section>
+
+
+
+
+    <!-- Volume -->
+
+    <section class="volume-section">
+
+
+        <label>
+            🔊 Volume
+        </label>
+
+
+        <input
+
+            type="range"
+
+            id="volumeSlider"
+
+            min="0"
+
+            max="1"
+
+            step="0.01"
+
+            value="1"
+
+        >
+
+
+    </section>
+
+
+
+
+    <!-- Performance -->
+
+    <section class="stats">
+
+
+        FPS:
+
+        <span id="fpsCounter">
+            0
+        </span>
+
+
+    </section>
+
+
+
+</main>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
